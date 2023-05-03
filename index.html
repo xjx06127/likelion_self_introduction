@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>최홍석 | 자기소개 페이지</title>
+    <style>
+      @font-face {
+        font-family: "SDGothic";
+        src: url("font/AppleSDGothicNeoM.ttf") format("truetype");
+        font-weight: normal;
+      } 
+      * {
+        font-family: "SDGothic";
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+        color: balck;
+      }
+
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      nav ul li a:hover {
+        color: #c4c4c4;
+      }
+
+      main {
+        margin-top: 100px;
+        padding: 0 50px;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h1{
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+
+      #about {
+        margin-bottom: 300px;
+        text-align: center;
+      }
+
+      #hobby {
+        margin-top: 200px;
+        margin-bottom: 300px;
+        text-align: center;
+      }
+      .hobbyList {
+        display: flex;
+        justify-content: space-around;
+      }
+      .hobbyList > li > img {
+        height: 200px;
+        width: 200px;
+      }
+      #service {
+        margin-top: 200px;
+        margin-bottom: 300px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      #contact {
+        margin-top: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li>|</li>
+          <li><a href="#hobby">Hobby</a></li>
+          <li>|</li>
+          <li><a href="#service">Service</a></li>
+          <li>|</li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>About me</h1>
+        <br>
+        <p>
+          안녕하세요! 컴퓨터공학을 전공하고 있는 22학번 21살
+          <strong>최홍석</strong>입니다.<br />
+          웹개발에 관심을 갖고 <strong>Front-End분야</strong>를 열심히 공부하고
+          있습니다!
+        </p>
+        <br>
+        <br>
+        <img src="logo.png" style="height: 100px; width: 200px;">
+      </section>
+
+      <section id="hobby">
+        <h1>Hobby</h1>
+        <br>
+        <ul class="hobbyList">
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<img src="글쓰기.png" /></li>
+          <li><img src="산책.jpg" /></li>
+          <li><img src="혼코노.png" /></li>
+        </ul>
+        <ul class="hobbyList">
+          <li>글쓰기</li>
+          <li>산책</li>
+          <li>혼코노</li>
+        </ul>
+      </section>
+
+      <section id="service">
+        <h1>Service</h1>
+        <br>
+        <h3>MBTI 확장 ver. TEST</h3>
+        <p>만들고 싶은 서비스는 MBTI 검사 확장버전테스트입니다.<br /></p>
+        유행하는 MBTI 검사는 검사 당시의 기분에 따라
+        <strong>결과가 좌우되는 특징</strong>이 짙습니다.<br /><br />
+        매일 조금씩 간단한 문항 몇 개씩을 제공하여 데이터를 천천히 쌓고 나중에
+        그 데이터를 한번에 합쳐 결과를 출력한다면, 감정에 휩쓸린 편향된 결과가
+        아닌, 객관적 결과를 얻을 수 있을 것 입니다.
+      </section>
+
+      <section id="contact">
+        <h1>contact</h1>
+        <br>
+        <a href="https://github.com/xjx06127">
+          <img src="GitHub-Mark.png" style="height: 300px; width: 300px" />
+        </a>
+        <p><strong>github</strong></p>
+      </section>
+    </main>
+  </body>
+</html>
